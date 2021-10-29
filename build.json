@@ -10,16 +10,19 @@
    },
    "settings": {
       "unit_name":{
-         "singular": "room", 
-         "plural" : "rooms" 
+         "singular": "banner",
+         "plural" : "banners"
       },
       "unit_type_name" :  {
-         "singular":"room type",
-         "plural": "room types"
+         "singular":"banner type",
+         "plural": "banner types"
       },
-      "send_invoice_email_automatically" : true,
       "display_tooltip" : true,
-      "is_total_balance_include_forecast" : true
+      "allow_free_bookings" : true,
+      "force_room_selection" : true,
+      "send_booking_notes" : true,
+      "auto_no_show" : true
+
    }
 }
   
