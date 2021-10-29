@@ -148,7 +148,7 @@ function &DB($params = '', $active_record_override = NULL)
 		$DB->initialize();
 	}
 
-	$DB->query('SET SESSION sql_mode="STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION"');
+	$DB->query('SET SESSION sql_mode="NO_ENGINE_SUBSTITUTION"');
 	if (isset($params['stricton']) && $params['stricton'] == TRUE)
 	{
 		$DB->query('SET SESSION sql_mode="STRICT_ALL_TABLES"');
