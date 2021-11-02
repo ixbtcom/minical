@@ -303,8 +303,8 @@ if(
     innGrid.featureSettings.allow_free_bookings = parseInt('<?=(isset($this->allow_free_bookings) ? $this->allow_free_bookings : 0)?>');
     innGrid.featureSettings.selectedPaymentGateway = '<?=(isset($this->selected_payment_gateway) ? $this->selected_payment_gateway : '')?>';
     innGrid.featureSettings.bookingCancelledWithBalance = parseInt('<?=(isset($this->booking_cancelled_with_balance) ? $this->booking_cancelled_with_balance : 0)?>');
-    innGrid.isCCVisualizationEnabled = parseInt('<?=(($this->is_cc_visualization_enabled) ? 1 : 0)?>');
-    innGrid.featureSettings.cuurentLanguage = "<?=$this->session->userdata('language') ? $this->session->userdata('language') : ''?>";
+    innGrid.isCCVisualizationEnabled = false;
+    innGrid.featureSettings.cuurentLanguage = "<?=$this->session->userdata('language') ? $this->session->userdata('language') : 'russian'?>";
 
     // subscription plans
     var STARTER = "<?php echo STARTER; ?>";
