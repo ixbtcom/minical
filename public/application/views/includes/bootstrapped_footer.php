@@ -81,14 +81,14 @@
 
     var innGrid = innGrid || {};
     innGrid.enableNewCalendar = parseInt('<?=(isset($this->enable_new_calendar) ? $this->enable_new_calendar : 1)?>');
-    innGrid.enableHourlyBooking = parseInt('<?=(isset($this->enable_hourly_booking) ? $this->enable_hourly_booking : 0)?>');
+    innGrid.enableHourlyBooking = 0;
 
     innGrid.featureSettings = innGrid.featureSettings || {};
     innGrid.featureSettings.allow_free_bookings = parseInt('<?=(isset($this->allow_free_bookings) ? $this->allow_free_bookings : 0)?>');
     innGrid.featureSettings.selectedPaymentGateway = '<?=(isset($this->selected_payment_gateway) ? $this->selected_payment_gateway : '')?>';
     innGrid.featureSettings.bookingCancelledWithBalance = parseInt('<?=(isset($this->booking_cancelled_with_balance) ? $this->booking_cancelled_with_balance : 0)?>');
-    innGrid.isCCVisualizationEnabled = false;
-    innGrid.isAsaasPaymentEnabled = parseInt('<?=(($this->selected_payment_gateway == "asaas") ? 1 : 0)?>');
+    innGrid.isCCVisualizationEnabled = 0;
+    innGrid.isAsaasPaymentEnabled = 0;
     innGrid.featureSettings.cuurentLanguage = "<?=$this->session->userdata('language') ? $this->session->userdata('language') : ''?>";
     innGrid.imageUrl = "<?= $this->image_url; ?>";
 
