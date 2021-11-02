@@ -21,7 +21,7 @@ if (!isset($_SERVER['HTTP_HOST'])) {
     $_SERVER['REMOTE_ADDR'] = 'localhost';
 }
 
-date_default_timezone_set("America/Los_Angeles"); // temporary quick fix
+date_default_timezone_set("Europe/Moscow"); // temporary quick fix
 
 $protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' || $_SERVER['SERVER_PORT'] == 443) ? "https://" : "http://";
 
@@ -87,7 +87,7 @@ $config['url_suffix'] = '';
 | than english.
 |
 */
-$config['language']	= 'english';
+$config['language']	= 'russian';
 
 /*
 |--------------------------------------------------------------------------
