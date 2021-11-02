@@ -940,9 +940,9 @@ class Tokenex {
 
             $whitelabelinfo = $this->ci->session->userdata('white_label_information');
 
-            $from_email = isset($whitelabelinfo['support_email']) && $whitelabelinfo['support_email'] ? $whitelabelinfo['support_email'] : 'support@minical.io';
+            $from_email = isset($whitelabelinfo['support_email']) && $whitelabelinfo['support_email'] ? $whitelabelinfo['support_email'] : 'booking@ixbt.media';
             
-            $to_email = isset($whitelabelinfo['support_email']) && $whitelabelinfo['support_email'] ? $whitelabelinfo['support_email'] : 'support@minical.io';
+            $to_email = isset($whitelabelinfo['support_email']) && $whitelabelinfo['support_email'] ? $whitelabelinfo['support_email'] : 'booking@ixbt.media';
 
             $this->ci->email->from($from_email);
             $this->ci->email->to($to_email);

@@ -7,7 +7,7 @@ password by following the link below.
  
 Activate your account: <?php echo site_url('/auth/reset_password/'.$user_id.'/'.$new_pass_key); ?>
 
-If you have any questions, please contact support@minical.io.
+If you have any questions, please contact booking@ixbt.media.
 
 -- 
 Thanks!

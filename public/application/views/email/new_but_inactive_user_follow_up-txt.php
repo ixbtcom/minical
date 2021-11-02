@@ -12,4 +12,4 @@ Jaeyun Noh
 Founder, Minical Inc. 
 
 Phone: +1 (403) 708 0563 
-Email: jaeyun@minical.io
+Email: sales@ixbt.media

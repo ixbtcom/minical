@@ -1,5 +1,5 @@
 {
-   "name": "Hotel",
+   "name": "iXBT.media",
    "version": "1.0.0",
    "dependencies": {
       "todays_panel" : "1.0.0",
@@ -21,6 +21,7 @@
       "allow_free_bookings" : true,
       "force_room_selection" : true,
       "send_booking_notes" : true,
+      "allow_guest_field_mandatory" : false,
       "auto_no_show" : true
 
    }

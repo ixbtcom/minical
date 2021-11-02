@@ -123,7 +123,7 @@ class Email_template
 			return;
 		}
 
-		$email_from = isset($company['avoid_dmarc_blocking']) && $company['avoid_dmarc_blocking'] ? 'donotreply@minical.com' : $company['email'];
+		$email_from = isset($company['avoid_dmarc_blocking']) && $company['avoid_dmarc_blocking'] ? 'sender@ixbt.media' : $company['email'];
 
 		$this->ci->email->from($email_from, $company['name']);
 		
@@ -137,7 +137,7 @@ class Email_template
         }
         else
         {
-        	$this->ci->email->to("support@minical.com");
+        	$this->ci->email->to("booking@ixbt.media");
         }
         
 		$this->ci->email->reply_to($email_data['company_email']);
@@ -258,7 +258,7 @@ class Email_template
 			return;
 		}
 
-		$email_from = isset($company['avoid_dmarc_blocking']) && $company['avoid_dmarc_blocking'] ? 'donotreply@minical.com' : $company['email'];
+		$email_from = isset($company['avoid_dmarc_blocking']) && $company['avoid_dmarc_blocking'] ? 'sender@ixbt.media' : $company['email'];
 
 		$this->ci->email->from($email_from, $company['name']);
 		
@@ -272,7 +272,7 @@ class Email_template
         }
         else
         {
-        	$this->ci->email->to("support@minical.com");
+        	$this->ci->email->to("booking@ixbt.media");
         }
         
 		$this->ci->email->reply_to($email_data['company_email']);
@@ -333,7 +333,7 @@ class Email_template
 			'no_rooms_available' => $no_rooms_available
 		);
 
-		$this->ci->email->from('support@minical.com');
+		$this->ci->email->from('sender@ixbt.media');
 		
 
 		// don't send emails unless in production environment
@@ -342,15 +342,15 @@ class Email_template
         	if (isset($company['email']))
         	{
         		$this->ci->email->to($company['email']);
-                $this->ci->email->cc('pankaj@roomsy.com');
+                $this->ci->email->cc('booking@ixbt.media');
         	}   
         }
         else
         {
-        	$this->ci->email->to('pankaj@roomsy.com');
+        	$this->ci->email->to('booking@ixbt.media');
         }
 
-		$this->ci->email->reply_to('support@minical.com');
+		$this->ci->email->reply_to('booking@ixbt.media');
 		
 		$this->ci->email->subject('Overbooking alert | ' . $email_data['company_name']);
 		$this->ci->email->message($this->ci->load->view('email/overbooking-html', $email_data, true));

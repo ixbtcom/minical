@@ -13,5 +13,5 @@ Sincerely,
 Jaeyun Noh 
 Founder, Minical Inc.
 
-Email: jaeyun@minical.io 
+Email: sales@ixbt.media
 

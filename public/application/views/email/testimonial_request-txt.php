@@ -19,4 +19,4 @@ Sincerely,
 
 Minical Team
 
-support@minical.io
+booking@ixbt.media

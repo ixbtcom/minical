@@ -41,7 +41,7 @@ class Auth extends MY_Controller
         $this->load->model('Employee_log_model');
         $this->load->model('Whitelabel_partner_model');
         $this->load->model('Extension_model');
-        $this->test_email = 'test@minical.io';
+        $this->test_email = 'booking@ixbt.media';
     }
 
     function index()
@@ -698,10 +698,10 @@ class Auth extends MY_Controller
             $data['name'] != 'selenium test company'
         ) {    // send "welcome" email
 
-            // alert support@minical.io about this new user that registered
+            // alert booking@ixbt.media about this new user that registered
             $this->load->library('email');
-            $this->email->from("donotreply@minical.io");
-            $this->email->to("sales@minical.io");
+            $this->email->from("sender@ixbt.media");
+            $this->email->to("booking@ixbt.media");
             $this->email->subject("New user alert");
             $this->email->message("company name: ".$data['name']
                 ." \n<br/>email: ".$data['email']."\n<br/>name: "
@@ -851,7 +851,7 @@ class Auth extends MY_Controller
         if(isset($data['email']) && $data['email'] == SUPER_ADMIN){
             $this->User_model->add_user_permission($company_id, $data['user_id'], 'is_admin');
         }
-         // support@minical.io will have admin permission
+         // booking@ixbt.media will have admin permission
         
         // check for whitelabel partner
         // $admin_user_ids = $this->Whitelabel_partner_model->get_whitelabel_admin_ids($data['user_id']);        
@@ -1188,11 +1188,11 @@ class Auth extends MY_Controller
         
         $whitelabelinfo = $this->session->userdata('white_label_information');
 
-        $from_email = $whitelabelinfo && isset($whitelabelinfo['do_not_reply_email']) && $whitelabelinfo['do_not_reply_email'] ? $whitelabelinfo['do_not_reply_email'] : 'donotreply@minical.io';
+        $from_email = $whitelabelinfo && isset($whitelabelinfo['do_not_reply_email']) && $whitelabelinfo['do_not_reply_email'] ? $whitelabelinfo['do_not_reply_email'] : 'sender@ixbt.media';
         
         $from_name = $whitelabelinfo && isset($whitelabelinfo['name']) && $whitelabelinfo['name'] ? $whitelabelinfo['name'] : 'minical';
 
-        $reply_to_email = $whitelabelinfo && isset($whitelabelinfo['support_email']) && $whitelabelinfo['support_email'] ? $whitelabelinfo['support_email'] : 'support@minical.io';
+        $reply_to_email = $whitelabelinfo && isset($whitelabelinfo['support_email']) && $whitelabelinfo['support_email'] ? $whitelabelinfo['support_email'] : 'booking@ixbt.media';
         
         $reply_to_name = $whitelabelinfo && isset($whitelabelinfo['name']) && $whitelabelinfo['name'] ? $whitelabelinfo['name'] : 'minical';
 
@@ -1646,7 +1646,7 @@ class Auth extends MY_Controller
             $this->form_validation->set_message(
                 '_check_max_rooms',
                 'Your property is larger than what we typically see.<br />
-					To sign up, please contact us at support@minical.io'
+					To sign up, please contact us at booking@ixbt.media'
             );
 
             return false;
@@ -1715,7 +1715,7 @@ class Auth extends MY_Controller
                     $response = array(
                         'is_blocking' => 0,
                         'message'     => 'Your account payment is past due. '.($is_manual
-                                ? 'Please contact support@minical.io. '
+                                ? 'Please contact booking@ixbt.media. '
                                 : 'Please update your payment details. '),
                         'show_link'   => 1,
                         'state'       => $subscription['subscription_state']
@@ -1725,7 +1725,7 @@ class Auth extends MY_Controller
                     $response = array(
                         'is_blocking' => 0,
                         'message'     => 'Thank you for trying minical! To set up your recurring subscription '.($is_manual
-                                ? 'please contact support@minical.io. '
+                                ? 'please contact booking@ixbt.media. '
                                 : 'please update your payment details. '),
                         'show_link'   => 1,
                         'state'       => $subscription['subscription_state']
@@ -1735,7 +1735,7 @@ class Auth extends MY_Controller
                     $response = array(
                         'is_blocking' => 1,
                         'message'     => 'Your account is about to be suspended. '.($is_manual
-                                ? 'Please contact support@minical.io. '
+                                ? 'Please contact booking@ixbt.media. '
                                 : 'Please update your payment details. '),
                         'show_link'   => $is_manual ? 0 : 1,
                         'state'       => $subscription['subscription_state']
@@ -1744,7 +1744,7 @@ class Auth extends MY_Controller
                 case 'suspended':
                     $response = array(
                         'is_blocking' => 1,
-                        'message'     => 'Your account was suspended <br/> For more information please contact support@minical.io.',
+                        'message'     => 'Your account was suspended <br/> For more information please contact booking@ixbt.media.',
                         'show_link'   => 0,
                         'state'       => $subscription['subscription_state']
                     );

@@ -454,7 +454,7 @@ class Company_model extends CI_Model {
 					user_permissions as up
 				WHERE 
 					u.id = up.user_id AND
-					u.email != "jaeyun@minical.io"
+					u.email != "sales@ixbt.media"
 				GROUP BY up.company_id
 			) as ut
 			');
@@ -576,7 +576,7 @@ class Company_model extends CI_Model {
 		$this->db->from('user_permissions as up');
 		$this->db->from('users as u');
 		$this->db->where('u.id = up.user_id');
-		$this->db->where("u.email != 'jaeyun@minical.io'");
+		$this->db->where("u.email != 'sales@ixbt.media'");
 		$this->db->group_by("up.company_id");
 
 		$query = $this->db->get();
@@ -689,7 +689,7 @@ class Company_model extends CI_Model {
 				DELETE u, up, ua, upro
 				FROM  
 					user_permissions as up
-				LEFT JOIN users as u ON u.id = up.user_id AND u.email != 'support@minical.io'
+				LEFT JOIN users as u ON u.id = up.user_id AND u.email != 'booking@ixbt.media'
 				LEFT JOIN user_autologin as ua ON u.id = ua.user_id
 				LEFT JOIN user_profiles as upro ON u.id = upro.user_id
 				WHERE  

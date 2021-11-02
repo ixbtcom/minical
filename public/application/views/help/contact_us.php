@@ -4,7 +4,7 @@
 		
 		
 		<p>
-			E-mail: <a href="mailto:support@minical.io">support@minical.io</a>
+			E-mail: <a href="mailto:booking@ixbt.media">booking@ixbt.media</a>
 		</p>
 		
 		<p>

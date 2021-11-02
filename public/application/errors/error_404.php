@@ -60,7 +60,7 @@ p {
 			<img src="<?php echo base_url()."images/taro.jpg" ?>" style="margin-bottom:10px;"/>
 			
 			<br/><br/>
-			For any questions/inquiries, contact me at <a href="mailto:support@minical.io">support@minical.io<a/>
+			For any questions/inquiries, contact me at <a href="mailto:booking@ixbt.media">booking@ixbt.media<a/>
 		</div>
 		<?php //echo $message; ?>
 	</div>

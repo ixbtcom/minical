@@ -61,7 +61,7 @@
 	</span>
 	<br>
 	<span style=3D"font-size:15px;font-family:Arial;color:rgb(34,34,34);font-weight:normal;vertical-align:baseline;white-space:pre-wrap">
-		support@minical.io
+		booking@ixbt.media
 	</span>
 	<br>
 	<span style=3D"font-size:15px;font-family:Arial;background-color:rgb(255,255,204);font-weight:normal;vertical-align:baseline;white-space:pre-wrap">Minical.io</span>

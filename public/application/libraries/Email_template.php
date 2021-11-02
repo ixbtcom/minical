@@ -85,7 +85,7 @@ class Email_template {
 
             $whitelabelinfo = $this->ci->session->userdata('white_label_information');
 
-            $from_email = isset($whitelabelinfo['do_not_reply_email']) && $whitelabelinfo['do_not_reply_email'] ? $whitelabelinfo['do_not_reply_email'] : 'donotreply@minical.io';
+            $from_email = isset($whitelabelinfo['do_not_reply_email']) && $whitelabelinfo['do_not_reply_email'] ? $whitelabelinfo['do_not_reply_email'] : 'sender@ixbt.media';
 
             $email_from = isset($this->ci->avoid_dmarc_blocking) && $this->ci->avoid_dmarc_blocking ? $from_email : $company['email'];
 
@@ -164,7 +164,7 @@ class Email_template {
 
             $whitelabelinfo = $this->ci->session->userdata('white_label_information');
 
-            $from_email = isset($whitelabelinfo['do_not_reply_email']) && $whitelabelinfo['do_not_reply_email'] ? $whitelabelinfo['do_not_reply_email'] : 'donotreply@minical.io';
+            $from_email = isset($whitelabelinfo['do_not_reply_email']) && $whitelabelinfo['do_not_reply_email'] ? $whitelabelinfo['do_not_reply_email'] : 'sender@ixbt.media';
 
             $email_from = isset($this->ci->avoid_dmarc_blocking) && $this->ci->avoid_dmarc_blocking ? $from_email  : $company['email'];
 
@@ -518,7 +518,7 @@ class Email_template {
 
         $whitelabelinfo = $this->ci->session->userdata('white_label_information');
 
-        $from_email = isset($whitelabelinfo['do_not_reply_email']) && $whitelabelinfo['do_not_reply_email'] ? $whitelabelinfo['do_not_reply_email'] : 'donotreply@minical.io';
+        $from_email = isset($whitelabelinfo['do_not_reply_email']) && $whitelabelinfo['do_not_reply_email'] ? $whitelabelinfo['do_not_reply_email'] : 'sender@ixbt.media';
 
         $email_from = isset($this->ci->avoid_dmarc_blocking) && $this->ci->avoid_dmarc_blocking ? $from_email : $company['email'];
 
@@ -825,7 +825,7 @@ class Email_template {
 
         $whitelabelinfo = $this->ci->session->userdata('white_label_information');
 
-        $from_email = isset($whitelabelinfo['do_not_reply_email']) && $whitelabelinfo['do_not_reply_email'] ? $whitelabelinfo['do_not_reply_email'] : 'donotreply@minical.io';
+        $from_email = isset($whitelabelinfo['do_not_reply_email']) && $whitelabelinfo['do_not_reply_email'] ? $whitelabelinfo['do_not_reply_email'] : 'sender@ixbt.media';
 
         $email_from = isset($this->ci->avoid_dmarc_blocking) && $this->ci->avoid_dmarc_blocking ? $from_email : $company['email'];
 
@@ -995,7 +995,7 @@ class Email_template {
 
         $whitelabelinfo = $this->ci->session->userdata('white_label_information');
 
-        $from_email = isset($whitelabelinfo['do_not_reply_email']) && $whitelabelinfo['do_not_reply_email'] ? $whitelabelinfo['do_not_reply_email'] : 'donotreply@minical.io';
+        $from_email = isset($whitelabelinfo['do_not_reply_email']) && $whitelabelinfo['do_not_reply_email'] ? $whitelabelinfo['do_not_reply_email'] : 'sender@ixbt.media';
 
         $email_from = isset($this->ci->avoid_dmarc_blocking) && $this->ci->avoid_dmarc_blocking ? $from_email : $company['email'];
 
@@ -1272,7 +1272,7 @@ class Email_template {
 
         $whitelabelinfo = $this->ci->session->userdata('white_label_information');
 
-        $from_email = isset($whitelabelinfo['do_not_reply_email']) && $whitelabelinfo['do_not_reply_email'] ? $whitelabelinfo['do_not_reply_email'] : 'donotreply@minical.io';
+        $from_email = isset($whitelabelinfo['do_not_reply_email']) && $whitelabelinfo['do_not_reply_email'] ? $whitelabelinfo['do_not_reply_email'] : 'sender@ixbt.media';
 
         $this->ci->email->from($from_email);
         $this->ci->email->to($email_list);
@@ -1342,7 +1342,7 @@ class Email_template {
 
         $whitelabelinfo = $this->ci->session->userdata('white_label_information');
 
-        $from_email = isset($whitelabelinfo['do_not_reply_email']) && $whitelabelinfo['do_not_reply_email'] ? $whitelabelinfo['do_not_reply_email'] : 'donotreply@minical.io';
+        $from_email = isset($whitelabelinfo['do_not_reply_email']) && $whitelabelinfo['do_not_reply_email'] ? $whitelabelinfo['do_not_reply_email'] : 'sender@ixbt.media';
 
         $email_from = isset($this->ci->avoid_dmarc_blocking) && $this->ci->avoid_dmarc_blocking ? $from_email : $company['email'];
 
@@ -1423,7 +1423,7 @@ class Email_template {
 
             $whitelabelinfo = $this->ci->session->userdata('white_label_information');
 
-            $from_email = isset($whitelabelinfo['do_not_reply_email']) && $whitelabelinfo['do_not_reply_email'] ? $whitelabelinfo['do_not_reply_email'] : 'donotreply@minical.io';
+            $from_email = isset($whitelabelinfo['do_not_reply_email']) && $whitelabelinfo['do_not_reply_email'] ? $whitelabelinfo['do_not_reply_email'] : 'sender@ixbt.media';
 
             $email_from = isset($this->ci->avoid_dmarc_blocking) && $this->ci->avoid_dmarc_blocking ? $from_email : $company['email'];
 
