@@ -17,15 +17,15 @@
 				<input name="room-type-acronym" class="form-control" type="text" size="6" maxlength="6" value="NRT">	
 			</div>
 		</div>	
-        <div class="form-group">
-            <div class="clearfix" style="margin-bottom: 10px;">
+        <div class="form-group" style="display:none;">
+            <div class="clearfix" style="margin-bottom: 10px; display:none;">
                 <div class="col-md-1"></div>
                 <label class="col-md-4 control-label"><?php echo l('minimum_occupancy'); ?></label>
                 <div class="col-md-1"></div>
             	<label class="col-md-4 control-label"><?php echo l('maximum_occupancy'); ?></label>
             </div>
 
-			<div class="clearfix range_occupancy">
+			<div class="clearfix range_occupancy"  style="display:none;">
                 <div class="col-md-1"></div>
                 <div class="col-md-3">
                 	<input type="number" name="min-occupancy" class="ranged_slider_value min_occupancy min-wep" value="1" size="1" min="1" max="30" style="float: right; margin-top: -6px;">
@@ -40,14 +40,14 @@
         </div>
 
         <div class="form-group">
-            <div class="clearfix" style="margin-bottom: 10px;">
+            <div class="clearfix"  style="display:none;">
                 <div class="col-md-3"></div>
             	<label class="col-md-4 control-label label-adults" style="text-align: left;"><?php echo l('maximum_adults'); ?></label>
                 <div class="col-md-1"></div>
                 <label class="col-md-4 control-label label-child" style="text-align: left;"><?php echo l('maximum_children'); ?></label>
             </div>
             
-			<div class="clearfix">
+			<div class="clearfix"  style="display:none;">
                 <div class="col-md-3"></div>
             	<div class="col-md-3 occupancy-range" style="padding-right: 0;">
                     <input type="range" name="max-adults" min="1" max="30" value="4" class="rt-occupancy-slider range-wep" id="max-adults-range">
@@ -65,9 +65,9 @@
             </div>                                    
         </div>	
 
-        <div class="form-group">
+        <div class="form-group"  style="display:none;">
             <label class="col-sm-3 control-label"><?php echo l('show_on_website'); ?></label>
-			<div class="col-sm-2">
+			<div class="col-sm-2"  style="display:none;">
                 <select class="enter form-control" name="can-be-sold-online">
                     <option value="1"><?php echo l('Yes', true); ?></option>
                     <option value="0"><?php echo l('No', true); ?></option>
@@ -75,7 +75,7 @@
             </div>
 
             <label class="col-sm-3 control-label"><?php echo l('Default Room Charge'); ?></label>
-			<div class="col-sm-4">
+			<div class="col-sm-4"  style="display:none;">
                 <select class="enter form-control" name="default_room_charge">
                     <?php if (!$this->allow_free_bookings) {
 						echo '<option>--Select Charge Type--</option>';

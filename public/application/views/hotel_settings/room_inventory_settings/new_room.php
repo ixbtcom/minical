@@ -100,19 +100,7 @@ if (isset($room_limit)) {
         <td>
             <input type="text" class="form-control" name="sort_order" value="<?php if($room['sort_order'] != 'NULL') echo $room['sort_order']; ?>">
         </td>
-        <td class="text-center">
-            <div class="checkbox">
-                <label>
-                    <input type="checkbox" class="can-be-sold-online-checkbox" autocomplete="off"
-                        <?php
-                        if ($room['can_be_sold_online'] == 1) {
-                            echo 'checked="checked"';
-                        }
-                        ?>
-                    />
-                </label>
-            </div>
-        </td>
+
         <td><button class="delete-room-button btn btn-danger" style="width:78px;"><?=l("Hide");?></button></td>
     </tr>
     <?php

@@ -6,7 +6,7 @@
             <div class="page-title-icon">
                 <i class="pe-7s-home text-success"></i>
             </div>
-           <?php echo l('Room type settings'); ?>
+           Типы баннеров
         </div>
     </div>
   </div>
@@ -49,29 +49,12 @@
 				<thead>
 					<tr>
 						<th>
-							<?php echo l('Name'); ?>
+							Название
 						</th>
 						<th>
 							<?php echo l('Acronym'); ?>
 						</th>
-						<th>
-							<?php echo l('Show on Website'); ?>
-						</th>
-						<th>
-							<?php echo l('Room Charge'); ?>
-						</th>
-						<th>
-							<?php echo l('Min / Max Occupancy'); ?>
-						</th>
-						<th>
-							<?php echo l('Maximum Adults') ?>
-						</th>
-						<th>
-							<?php echo l('Maximum Children') ?>
-						</th>
-						<th style="text-align: center;">
-							<?php echo l('Action'); ?>
-						</th>
+
 					</tr>
 				</thead>
 				<tbody id="sortable">
@@ -87,39 +70,6 @@
 								 <?php echo $room_type['name']; ?>
 								</td>
 								<td><?php echo $room_type['acronym']; ?></td>
-								<td><?php if ($room_type['can_be_sold_online'] == "1") echo "Yes"; ?><?php if ($room_type['can_be_sold_online'] == "0") echo "No"; ?></td>
-								<td>
-									<?php
-									if(count($charge_types) > 0){
-										foreach ($charge_types as $charge_type) {
-											if ($charge_type['id'] == $room_type['default_room_charge']) {
-												echo $charge_type['name'];
-											}
-										}
-									}
-									
-									if(isset($rate_plans) && count($rate_plans) > 0){
-										foreach ($rate_plans as $rate_plan) {
-											if(isset($rate_plan) && count($rate_plan) > 0){
-												foreach ($rate_plan as $rp) {
-												if ($rp['rate_plan_id'] == $room_type['default_room_charge']) {
-													echo $rp['rate_plan_name'];
-													}
-												}
-											}
-										}
-									}
-									?>
-								</td>
-								<td>
-									<?php echo $room_type['min_occupancy']; ?>/ <?php echo $room_type['max_occupancy']; ?>
-								</td>
-								<td>
-									<?php echo $room_type['max_adults']; ?>
-								</td>
-								<td>
-									<?php echo $room_type['max_children']; ?>
-								</td>
 								<td style="width: 13%">
 									<div class="btn-group pull-right" role="group">
 										<button class="btn btn-sm btn-light edit_room_type" id="<?php echo $room_type['id'] ?>" data-min_occupancy="<?php echo $room_type['min_occupancy']; ?>" data-max_occupancy="<?php echo $room_type['max_occupancy']; ?>"><?php echo l('Edit'); ?></button>

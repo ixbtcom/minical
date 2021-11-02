@@ -6,7 +6,7 @@
             <div class="page-title-icon">
                 <i class="pe-7s-home text-success"></i>
             </div>
-            <?php echo l('room')." ".l('settings'); ?>
+            Настройки разделов
         </div>
         <div class="page-title-actions m-010">
           <button id="add-room-button" class="btn btn-primary btn-height"><?php echo l('add_room'); ?></button>
@@ -55,9 +55,9 @@
                 <?php echo l('floors'); ?>
             </th> -->
             <th width="100px">
-                <?php echo l('sort_order'); ?>
+                Приоритет сортировки
             </th>
-            <th class="text-center">
+            <th class="text-center"  style="display:none;">
                 <input type="checkbox" class="all-can-be-sold-online-checkbox" autocomplete="off" style="margin-right: 10px"/>
                 <?php echo l('can_be_sold_online'); ?>
             </th>
