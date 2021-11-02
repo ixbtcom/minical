@@ -10,12 +10,12 @@
    },
    "settings": {
       "unit_name":{
-         "singular": "banner",
-         "plural" : "banners"
+         "singular": "room",
+         "plural" : "rooms"
       },
       "unit_type_name" :  {
-         "singular":"banner type",
-         "plural": "banner types"
+         "singular":"room type",
+         "plural": "room types"
       },
       "display_tooltip" : true,
       "allow_free_bookings" : true,
